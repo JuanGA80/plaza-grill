@@ -1,0 +1,17 @@
+<nav>
+  <div class="logo-menu">
+    <img src="assets/logo-plaza-grill.png" alt="" />
+  </div>
+  <ul class="menu" [ngClass]="collapsed ? 'menuActive' : ''">
+    <li><a href="">Inicio</a></li>
+    <li><a href="">Nosotros</a></li>
+    <li><a href="">Ubicación</a></li>
+    <li><a href="">Promociones</a></li>
+    <li><a href="">Menú</a></li>
+  </ul>
+  <div id="menu_on" (click)="verMenu()" [ngClass]="btnMenu ? 'btnActive' : ''">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
