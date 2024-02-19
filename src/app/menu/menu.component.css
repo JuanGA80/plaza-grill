@@ -18,7 +18,7 @@ nav .logo-menu img {
 .menu {
   position: absolute;
   top: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #561629;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -110,7 +110,7 @@ nav .logo-menu img {
   .menu {
     position: relative;
     top: 100%;
-    background-color: none;
+    background-color: transparent;
     height: inherit;
     width: 100%;
     display: flex;
