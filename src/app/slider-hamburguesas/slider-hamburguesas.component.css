@@ -1,0 +1,9 @@
+.container-slider-menu {
+  width: 100%;
+  position: relative;
+  background-image: url("/assets/fondo-hamburguesa.png");
+  background-size: cover;
+  background-position: center center;
+
+  gap: 20px;
+}
