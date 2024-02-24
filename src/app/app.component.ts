@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 interface Imagenes {
   id: number;
   imageSrc: string;
