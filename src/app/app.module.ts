@@ -16,7 +16,11 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { GaleryComponent } from './galery/galery.component';
 import { SliderHamburguesasComponent } from './slider-hamburguesas/slider-hamburguesas.component';
 import { SliderCervezasComponent } from './slider-cervezas/slider-cervezas.component';
-import { SwiperModule } from 'swiper/angular';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { SliderAlitasComponent } from './slider-alitas/slider-alitas.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,15 +32,12 @@ import { SwiperModule } from 'swiper/angular';
     GaleryComponent,
     SliderHamburguesasComponent,
     SliderCervezasComponent,
+    SliderAlitasComponent,
+    ContactoComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgFor,
-    BrowserAnimationsModule,
-    SwiperModule,
-  ],
-  providers: [provideClientHydration()],
+  imports: [BrowserModule, AppRoutingModule, NgFor, BrowserAnimationsModule],
+  providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
