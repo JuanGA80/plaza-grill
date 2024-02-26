@@ -1,6 +1,6 @@
 .box-video {
   width: 100%;
-  height: 570px;
+  height: 500px;
   position: relative;
   background-color: black;
 }
@@ -14,6 +14,7 @@
 }
 .video-mobil {
   width: 100%;
+  height: 500px;
 }
 .box-text {
   position: absolute;
@@ -31,18 +32,20 @@
 .box-text h1 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
   font-size: 40px;
   text-align: center;
+  margin: 0px auto 12px auto;
 }
 .box-text h2 {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
   font-size: 30px;
   text-align: center;
+  margin: 0;
 }
 @media (min-width: 767px) {
   .box-video {

@@ -10,6 +10,9 @@
 .item-contacto {
   width: 90%;
 }
+.item-contacto:nth-child(2) {
+  margin-bottom: 20px;
+}
 .item-contacto h2 {
   color: #fff;
   font-size: 28px;

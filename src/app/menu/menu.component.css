@@ -6,7 +6,9 @@ nav {
   align-items: center;
   position: relative;
 }
-
+.logo-menu {
+  margin-top: 20px;
+}
 nav .logo-menu img {
   max-width: 100%;
   width: 50px;
@@ -17,7 +19,7 @@ nav .logo-menu img {
 }
 .menu {
   position: absolute;
-  top: 50px;
+  top: 52px;
   background-color: #561629;
   height: 100vh;
   width: 100%;
@@ -113,6 +115,9 @@ nav .logo-menu img {
     object-fit: contain;
     padding: 5px 0px;
     margin-left: 70px;
+  }
+  .logo-menu {
+    margin-top: 0px;
   }
   .menu {
     position: relative;

@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
 }
 .galery h2 {
   font-size: 1.5em;
@@ -16,6 +16,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 .container-galery {
   width: 90%;
