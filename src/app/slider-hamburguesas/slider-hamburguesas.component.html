@@ -2,69 +2,58 @@
   <img src="assets/fondo-hamburguesa.png" alt="" class="fondo-hamburguesa" />
   <img src="assets/texto-hamburguesas.png" alt="" class="menu-hamburguesa" />
   <div class="carousel">
-    <div class="carousel-item" href="#one!">
+    <div class="carousel-item 1" href="#one!" id="1">
       <img src="assets/hamburguesa.png" />
       <p>BBQ Especial</p>
       <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#two!">
+    <div class="carousel-item 2" href="#two!" id="2">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#three!">
+    <div class="carousel-item 3" href="#three!" id="3">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#four!">
+    <div class="carousel-item" href="#four!" id="4">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#five!">
+    <div class="carousel-item" href="#five!" id="5">
       <img src="assets/hamburguesa.png" />
       <p>BBQ Especial</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#three!">
+    <div class="carousel-item" href="#three!" id="6">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#four!">
+    <div class="carousel-item" href="#four!" id="7">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#five!">
+    <div class="carousel-item" href="#five!" id="8">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#three!">
+    <div class="carousel-item" href="#three!" id="9">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
-    <div class="carousel-item" href="#four!">
+    <div class="carousel-item" href="#four!" id="10">
       <img src="assets/hamburguesa.png" />
       <p>Pizza Burguer</p>
-    </div>
-    <div class="carousel-item" href="#five!">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-    </div>
-    <div class="carousel-item" href="#three!">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-    </div>
-    <div class="carousel-item" href="#four!">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-    </div>
-    <div class="carousel-item" href="#five!">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-    </div>
-    <div class="carousel-item" href="#three!">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
+      <button (click)="openModal()">Info</button>
     </div>
   </div>
-</div>
-<div class="conatiner-modal" *ngIf="modalSwitch === true">
-  <app-modal-producto></app-modal-producto>
+  <div class="conatiner-modal" *ngIf="modalSwitch === true">
+    <app-modal-producto></app-modal-producto>
+  </div>
 </div>

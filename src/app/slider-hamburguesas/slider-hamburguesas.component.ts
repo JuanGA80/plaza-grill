@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { SwitchService } from '../services/switch.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { SwitchService } from '../services/switch.service';
 })
 export class SliderHamburguesasComponent implements OnInit {
   modalSwitch = false;
+
+  @ViewChild('asReferencia') idModal?: ElementRef;
   constructor(private modalSS: SwitchService) {}
 
   ngOnInit(): void {
@@ -17,6 +19,9 @@ export class SliderHamburguesasComponent implements OnInit {
   }
 
   openModal() {
+    const asReferencia = document.querySelectorAll('.carousel-item');
+
+    console.log(asReferencia);
     this.modalSwitch = true;
   }
 }
