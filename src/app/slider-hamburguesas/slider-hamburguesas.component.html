@@ -4,7 +4,8 @@
   <div class="carousel">
     <div class="carousel-item" href="#one!">
       <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
+      <p>BBQ Especial</p>
+      <button (click)="openModal()">Info</button>
     </div>
     <div class="carousel-item" href="#two!">
       <img src="assets/hamburguesa.png" />
@@ -20,7 +21,7 @@
     </div>
     <div class="carousel-item" href="#five!">
       <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
+      <p>BBQ Especial</p>
     </div>
     <div class="carousel-item" href="#three!">
       <img src="assets/hamburguesa.png" />
@@ -63,4 +64,7 @@
       <p>Pizza Burguer</p>
     </div>
   </div>
+</div>
+<div class="conatiner-modal" *ngIf="modalSwitch === true">
+  <app-modal-producto></app-modal-producto>
 </div>
