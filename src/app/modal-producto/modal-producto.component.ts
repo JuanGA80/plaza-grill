@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SwitchService } from '../services/switch.service';
+interface Hamburguesas {
+  id: number;
+  title: string;
+  picture: string;
+}
 
 @Component({
   selector: 'app-modal-producto',
@@ -7,6 +12,8 @@ import { SwitchService } from '../services/switch.service';
   styleUrl: './modal-producto.component.css',
 })
 export class ModalProductoComponent implements OnInit {
+  @Input() Hamburguesa: Hamburguesas[] = [];
+  @Input() position: number = 0;
   constructor(private modalSS: SwitchService) {}
   ngOnInit(): void {}
 

@@ -4,11 +4,16 @@ interface Imagenes {
   id: number;
   imageSrc: string;
 }
-/*interface Hamburguesas {
+interface Hamburguesas {
   id: number;
   title: string;
-  imagen: string;
-} */
+  picture: string;
+}
+interface Cervezas {
+  id: number;
+  title: string;
+  picture: string;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +21,7 @@ interface Imagenes {
 })
 export class AppComponent {
   title = 'plaza-grill';
+
   data: Imagenes[] = [
     {
       id: 1,
@@ -55,36 +61,69 @@ export class AppComponent {
     },
   ];
 
-  /*  info: Hamburguesas[] = [
+  info: Hamburguesas[] = [
     {
       id: 1,
       title: 'BBQ Especial',
-      imagen: 'assets/hamburguesa.png',
+      picture: 'assets/hamburguesa.png',
     },
     {
       id: 2,
       title: 'Arrachera',
-      imagen: 'assets/hamburguesa.png',
+      picture: 'assets/hamburguesa.png',
     },
     {
       id: 3,
-      title: 'Marisquera',
-      imagen: 'assets/hamburguesa.png',
+      title: 'Bacon',
+      picture: 'assets/hamburguesa.png',
     },
     {
       id: 4,
-      title: 'Bacon',
-      imagen: 'assets/hamburguesa.png',
+      title: 'Gringa',
+      picture: 'assets/hamburguesa.png',
     },
     {
       id: 5,
-      title: 'Gringa',
-      imagen: 'assets/hamburguesa.png',
+      title: 'Marinera',
+      picture: 'assets/hamburguesa.png',
     },
     {
       id: 6,
       title: 'Gourmet',
-      imagen: 'assets/hamburguesa.png',
+      picture: 'assets/hamburguesa.png',
     },
-  ]; */
+  ];
+
+  texto: Cervezas[] = [
+    {
+      id: 1,
+      title: 'Chela 1',
+      picture: 'assets/chela1.png',
+    },
+    {
+      id: 2,
+      title: 'Chela 2',
+      picture: 'assets/chela2.png',
+    },
+    {
+      id: 3,
+      title: 'Chela 3',
+      picture: 'assets/chela3.png',
+    },
+    {
+      id: 4,
+      title: 'Chela 4',
+      picture: 'assets/chela1.png',
+    },
+    {
+      id: 5,
+      title: 'Chela 5',
+      picture: 'assets/chela2.png',
+    },
+    {
+      id: 6,
+      title: 'Chela 6',
+      picture: 'assets/chela3.png',
+    },
+  ];
 }

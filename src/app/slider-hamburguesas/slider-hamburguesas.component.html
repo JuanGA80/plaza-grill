@@ -1,58 +1,27 @@
 <div class="container-slider-menu" id="hamburguesas">
   <img src="assets/fondo-hamburguesa.png" alt="" class="fondo-hamburguesa" />
   <img src="assets/texto-hamburguesas.png" alt="" class="menu-hamburguesa" />
-  <div class="carousel">
-    <div class="carousel-item 1" href="#one!" id="1">
-      <img src="assets/hamburguesa.png" />
-      <p>BBQ Especial</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item 2" href="#two!" id="2">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item 3" href="#three!" id="3">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#four!" id="4">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#five!" id="5">
-      <img src="assets/hamburguesa.png" />
-      <p>BBQ Especial</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#three!" id="6">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#four!" id="7">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#five!" id="8">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#three!" id="9">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-    <div class="carousel-item" href="#four!" id="10">
-      <img src="assets/hamburguesa.png" />
-      <p>Pizza Burguer</p>
-      <button (click)="openModal()">Info</button>
-    </div>
-  </div>
+  <swiper-container
+    class="mySwiper container-slider"
+    effect="coverflow"
+    grab-cursor="true"
+    centered-slides="true"
+    slides-per-view="auto"
+    coverflow-effect-rotate="0"
+    coverflow-effect-stretch="0"
+    coverflow-effect-depth="300"
+    coverflow-effect-modifier="2"
+    coverflow-effect-slide-shadows="false"
+  >
+    <swiper-slide
+      class="item-slider"
+      *ngFor="let info of Hamburguesa; let i = index"
+    >
+      <img src="{{ info.picture }}" alt="" class="img-slider" />
+      <h6>{{ info.title }}</h6>
+      <button (click)="openModal(i)">Info</button>
+    </swiper-slide>
+  </swiper-container>
   <div class="conatiner-modal" *ngIf="modalSwitch === true">
     <app-modal-producto></app-modal-producto>
   </div>

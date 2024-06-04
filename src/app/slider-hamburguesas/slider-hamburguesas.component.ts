@@ -1,5 +1,10 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { SwitchService } from '../services/switch.service';
+interface Hamburguesas {
+  id: number;
+  title: string;
+  picture: string;
+}
 
 @Component({
   selector: 'app-slider-hamburguesas',
@@ -8,6 +13,9 @@ import { SwitchService } from '../services/switch.service';
 })
 export class SliderHamburguesasComponent implements OnInit {
   modalSwitch = false;
+
+  @Input() Hamburguesa: Hamburguesas[] = [];
+  @Input() position: number = 0;
 
   @ViewChild('asReferencia') idModal?: ElementRef;
   constructor(private modalSS: SwitchService) {}
@@ -18,10 +26,8 @@ export class SliderHamburguesasComponent implements OnInit {
     });
   }
 
-  openModal() {
-    const asReferencia = document.querySelectorAll('.carousel-item');
-
-    console.log(asReferencia);
+  openModal(index: number) {
     this.modalSwitch = true;
+    this.position = index;
   }
 }

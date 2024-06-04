@@ -6,67 +6,25 @@
     class="menu-cervezas"
   />
   <div class="container-slider-menu-2">
-    <div class="carousel">
-      <div class="carousel-item" href="#one!">
-        <img src="assets/chela1.png" />
-        <p>Chela 1</p>
-      </div>
-      <div class="carousel-item" href="#two!">
-        <img src="assets/chela2.png" />
-        <p>Chela 2</p>
-      </div>
-      <div class="carousel-item" href="#three!">
-        <img src="assets/chela3.png" />
-        <p>Chela 3</p>
-      </div>
-      <div class="carousel-item" href="#four!">
-        <img src="assets/chela1.png" />
-        <p>Chela 1</p>
-      </div>
-      <div class="carousel-item" href="#five!">
-        <img src="assets/chela2.png" />
-        <p>Chela 2</p>
-      </div>
-      <div class="carousel-item" href="#three!">
-        <img src="assets/chela3.png" />
-        <p>Chela 3</p>
-      </div>
-      <div class="carousel-item" href="#four!">
-        <img src="assets/chela1.png" />
-        <p>Chela 1</p>
-      </div>
-      <div class="carousel-item" href="#five!">
-        <img src="assets/chela2.png" />
-        <p>Chela 2</p>
-      </div>
-      <div class="carousel-item" href="#three!">
-        <img src="assets/chela3.png" />
-        <p>Chela 3</p>
-      </div>
-      <div class="carousel-item" href="#four!">
-        <img src="assets/chela1.png" />
-        <p>Chela 1</p>
-      </div>
-      <div class="carousel-item" href="#five!">
-        <img src="assets/chela2.png" />
-        <p>Chela 2</p>
-      </div>
-      <div class="carousel-item" href="#three!">
-        <img src="assets/chela3.png" />
-        <p>Chela 3</p>
-      </div>
-      <div class="carousel-item" href="#four!">
-        <img src="assets/chela1.png" />
-        <p>Chela 1</p>
-      </div>
-      <div class="carousel-item" href="#five!">
-        <img src="assets/chela2.png" />
-        <p>Chela 2</p>
-      </div>
-      <div class="carousel-item" href="#three!">
-        <img src="assets/chela3.png" />
-        <p>Chela 3</p>
-      </div>
-    </div>
+    <swiper-container
+      class="mySwiper container-slider"
+      effect="coverflow"
+      grab-cursor="true"
+      centered-slides="true"
+      slides-per-view="auto"
+      coverflow-effect-rotate="0"
+      coverflow-effect-stretch="0"
+      coverflow-effect-depth="400"
+      coverflow-effect-modifier="2"
+      coverflow-effect-slide-shadows="false"
+    >
+      <swiper-slide
+        class="item-slider"
+        *ngFor="let texto of Cerveza; let i = index"
+      >
+        <img src="{{ texto.picture }}" alt="" class="img-slider-cerveza" />
+        <h6>{{ texto.title }}</h6>
+      </swiper-slide>
+    </swiper-container>
   </div>
 </div>

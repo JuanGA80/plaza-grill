@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-declare var $: any;
+import { Component, OnInit, Input } from '@angular/core';
+interface Cervezas {
+  id: number;
+  title: string;
+  picture: string;
+}
 
 @Component({
   selector: 'app-slider-cervezas',
@@ -7,14 +11,6 @@ declare var $: any;
   styleUrl: './slider-cervezas.component.css',
 })
 export class SliderCervezasComponent implements OnInit {
-  ngOnInit(): void {
-    $(document).ready(function () {
-      $('.carousel').carousel({
-        padding: 10,
-        shift: 0,
-        noWrap: true,
-        numVisible: 12,
-      });
-    });
-  }
+  @Input() Cerveza: Cervezas[] = [];
+  ngOnInit(): void {}
 }
