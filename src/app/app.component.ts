@@ -7,7 +7,9 @@ interface Imagenes {
 interface Hamburguesas {
   id: number;
   title: string;
+  imgTitle: string;
   picture: string;
+  ingredientes: string[];
 }
 interface Cervezas {
   id: number;
@@ -63,34 +65,82 @@ export class AppComponent {
 
   info: Hamburguesas[] = [
     {
-      id: 1,
+      id: 0,
       title: 'BBQ Especial',
+      imgTitle: 'assets/bbq-especial.png',
       picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '200 gramos de carne',
+        'Jamón',
+        'Queso cheddar',
+        'Queso Manchego',
+        'Tocino',
+        'Aderezada cono nuestra salsa BBQ',
+      ],
+    },
+    {
+      id: 1,
+      title: 'Arrachera',
+      imgTitle: 'assets/arrachera.png',
+      picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '200 gramos de jugosos filetes de Arrachera',
+        'Servida con queso manchego',
+        'Tocino',
+      ],
     },
     {
       id: 2,
-      title: 'Arrachera',
+      title: 'Bacon Bomb',
+      imgTitle: 'assets/bacon.png',
       picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '200 gramos de carne de res',
+        'Envuelta en tocino',
+        'Se sirve con queso manchego',
+      ],
     },
     {
       id: 3,
-      title: 'Bacon',
+      title: 'Gringa',
+      imgTitle: 'assets/gringa.png',
       picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '200 gramos de carne de res',
+        'Queso Manchego',
+        'Queso cheddar',
+        'Mermelada de tocino',
+        'Cebolla caramelizada',
+        'Sazonada con un rico BBQ preparado con Whiskey Jack Daniel´s',
+      ],
     },
     {
       id: 4,
-      title: 'Gringa',
+      title: 'Marinera',
+      imgTitle: 'assets/marinera.png',
       picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '100 gramos de camarones salteados a la mantequilla',
+        'Cebolla caramelizada',
+        '200 gramos de carne',
+        'Queso cheddar',
+        'Queso Manchego',
+        'Tocino',
+      ],
     },
     {
       id: 5,
-      title: 'Marinera',
-      picture: 'assets/hamburguesa.png',
-    },
-    {
-      id: 6,
       title: 'Gourmet',
+      imgTitle: 'assets/gourmet.png',
       picture: 'assets/hamburguesa.png',
+      ingredientes: [
+        '200 gramos de carne',
+        'Champiñones salteados a la mantequilla',
+        'Cebolla caramelizada',
+        'Queso cheddar',
+        'Queso Manchego',
+        'Tocino',
+      ],
     },
   ];
 
