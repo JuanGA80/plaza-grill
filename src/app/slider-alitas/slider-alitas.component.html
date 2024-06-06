@@ -1,43 +1,55 @@
 <div class="container-slider-menu-4" id="alitas">
-  <!-- <img src="assets/fondo-alitas.png" alt="" class="fondo-hamburguesa3" /> -->
-  <img src="assets/texto-alitas-boneles.png" alt="" class="menu-cervezas3" />
+  <div class="super-container3">
+    <img src="assets/texto-alitas-boneles.png" alt="" class="menu-alitas" />
 
-  <swiper-container
-    class="mySwiper container-slider4"
-    effect="coverflow"
-    grab-cursor="true"
-    centered-slides="true"
-    slides-per-view="auto"
-    coverflow-effect-rotate="0"
-    coverflow-effect-stretch="0"
-    coverflow-effect-depth="400"
-    coverflow-effect-modifier="2"
-    coverflow-effect-slide-shadows="false"
-  >
-    <swiper-slide class="item-slider" *ngFor="let date of Alita; let i = index">
-      <img src="{{ date.imagenAlita }}" alt="" class="img-slider-alita" />
-      <h6>{{ date.title }}</h6>
-      <button (click)="openModalAlita(i)">Saber más</button>
-    </swiper-slide>
-  </swiper-container>
-  <div class="modal-producto" *ngIf="modalAlita">
-    <i
-      class="fa-solid fa-xmark btn-cerrar-modal"
-      (click)="closeModalAlita()"
-    ></i>
-    <div class="modal-body">
-      <div class="card-producto">
-        <div class="card-image">
-          <img src="" alt="" />
-        </div>
+    <swiper-container
+      class="mySwiper container-slider3"
+      effect="coverflow"
+      grab-cursor="true"
+      centered-slides="true"
+      slides-per-view="auto"
+      coverflow-effect-rotate="0"
+      coverflow-effect-stretch="0"
+      coverflow-effect-depth="400"
+      coverflow-effect-modifier="2"
+      coverflow-effect-slide-shadows="false"
+    >
+      <swiper-slide
+        class="item-slider3"
+        *ngFor="let date of Alita; let i = index"
+      >
+        <img src="{{ date.imagenAlita }}" alt="" class="img-slider-alita" />
+        <h6>{{ date.title }}</h6>
+        <button (click)="openModalAlita(i)">Saber más</button>
+      </swiper-slide>
+    </swiper-container>
+    <div
+      class="modal-producto"
+      *ngIf="modalAlita && indexAlita == currentModalAlita.id"
+    >
+      <i
+        class="fa-solid fa-xmark btn-cerrar-modal"
+        (click)="closeModalAlita()"
+      ></i>
+      <div class="modal-body">
+        <div class="card-producto">
+          <div class="card-image">
+            <img src="{{ currentModalAlita.imagenAlita }}" alt="" />
+          </div>
 
-        <div class="descripcion-hamburguesa">
-          <img src="" alt="" class="img-title" />
-          <h6>Ingredientes</h6>
-          <ul>
-            <li></li>
-          </ul>
-          <a href="#">Comprar</a>
+          <div class="descripcion-hamburguesa">
+            <h6 class="title-cerveza">{{ currentModalAlita.title }}</h6>
+            <h6>Ingredientes</h6>
+            <ul>
+              <li>200 gramos de alitas marinadas</li>
+              <li>Salsa de su preferencia</li>
+              <li>
+                Nuestras alitas se acompañan con una porción de aderezo ranch o
+                blue cheese
+              </li>
+            </ul>
+            <a href="#">Comprar</a>
+          </div>
         </div>
       </div>
     </div>

@@ -13,11 +13,16 @@ interface Alitas {
 })
 export class SliderAlitasComponent implements OnInit {
   modalAlita = false;
+  indexAlita = 0;
+
   @Input() Alita: Alitas[] = [];
+  currentModalAlita: Alitas = this.Alita[0];
   ngOnInit(): void {}
 
   openModalAlita(index: number) {
     this.modalAlita = true;
+    this.indexAlita = index;
+    this.currentModalAlita = this.Alita[index];
   }
   closeModalAlita() {
     this.modalAlita = false;

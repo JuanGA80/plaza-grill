@@ -1,73 +1,47 @@
-.container-slider-menu-3 {
-  width: 100%;
-  position: relative;
+#cervezas {
   background-image: url("/assets/fondo-cervezas.png");
-  background-size: cover;
   background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0px;
-  height: 450px;
-}
-.fondo-hamburguesa2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -20%;
-  left: 0;
-  z-index: 4;
-}
-
-.menu-cervezas {
-  text-align: center;
-  max-width: 90%;
-  position: absolute;
-  top: -15%;
-  left: 5%;
-  margin: auto;
-  z-index: 3;
-}
-
-/*
-Este codigo es para el nuevo slider
-*/
-
-.container-slider-menu2 {
-  position: absolute;
-  top: -10%;
-
-  width: 100%;
-  height: 400px;
-  z-index: 4;
-}
-
-.item-slider {
-  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 250px;
-  height: 300px;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.img-slider-cerveza {
   width: 100%;
-  height: 80%;
-  object-fit: contain;
+  height: 65vh;
+  margin-top: -47px;
+}
+.super-container2 {
+  height: 100%;
+  width: 100%;
+}
+.menu-cerveza {
+  width: 85%;
+  display: block;
   margin: auto;
+  padding-top: 40px;
 }
-.item-slider h6 {
-  margin-top: -7px;
+.container-slider2 {
+  margin-top: -25px;
 }
-
-/*
-Fin del codigo del nuevo slider
-*/
+.item-slider2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 180px;
+  height: 350px;
+}
+.item-slider2 button {
+  display: block;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  width: 110px;
+  border: 2px solid #7f0222;
+  padding: 5px;
+  font-size: 16px;
+}
+.img-slider-cerveza {
+  max-width: 100%;
+  height: 80%;
+}
 
 /*modal*/
 .modal-producto {
@@ -94,6 +68,14 @@ Fin del codigo del nuevo slider
   align-items: center;
   flex-direction: column;
 }
+.card-producto {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .descripcion-hamburguesa h6 {
   text-align: center;
   font-weight: bold;
@@ -115,10 +97,10 @@ Fin del codigo del nuevo slider
   height: auto;
   margin: auto;
 }
-.card-image img {
+.img-modal-cerveza {
   max-width: 100%;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 270px;
   object-fit: contain;
 }
 .name-hamburguesa {
@@ -134,7 +116,7 @@ Fin del codigo del nuevo slider
   margin: auto;
 }
 .descripcion-hamburguesa ul {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -160,86 +142,78 @@ Fin del codigo del nuevo slider
   display: block;
   margin: 0px auto 7px auto;
 }
-.item-slider button {
-  background-color: white;
-  color: #7f0222;
-  font-size: 14px;
-  text-align: center;
-  padding: 5px;
-  border: solid 2px #7f0222;
-  width: 100px;
-  font-weight: 500;
+.bandera {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto;
 }
+.nacionalidad {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.descripcion-hamburguesa ul li {
+  margin: 4px auto;
+}
+.descripcion-hamburguesa ul li p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 /*modal*/
 @media (min-width: 767px) {
-  .container-slider-menu-3 {
-    max-width: 100%;
-    position: relative;
-    height: 700px;
-    margin: auto;
-  }
-  .fondo-hamburguesa2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -34%;
-    left: 0;
-    z-index: -1;
-  }
-
-  .menu-cervezas {
-    display: block;
-    max-width: 50%;
-    position: absolute;
-    top: -2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  /*
-Este codigo es para el nuevo slider
-*/
-
-  .container-slider {
-    height: 570px;
-    width: 100%;
-  }
-
-  .item-slider {
-    background-position: center;
+  #cervezas {
+    background-image: url("/assets/fondo-cervezas.png");
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 450px;
-    background-color: transparent;
+    width: 100%;
+    height: 75vh;
+    margin-top: -107px;
+  }
+  .super-container2 {
+    height: 100%;
+    width: 100%;
+  }
+  .menu-cerveza {
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .container-slider2 {
+    margin-top: -35px;
+  }
+  .item-slider2 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: 230px;
+    height: 410px;
+  }
+  .item-slider2 button {
+    display: block;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 110px;
+    border: 2px solid #7f0222;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .img-slider-cerveza {
+    max-width: 100%;
+    height: 80%;
   }
 
-  .img-slider-cerveza {
-    width: 100%;
-    height: 90%;
-    object-fit: contain;
-    margin: auto;
-  }
-  .item-slider button {
-    background-color: white;
-    color: #7f0222;
-    font-size: 14px;
-    text-align: center;
-    padding: 5px;
-    border: solid 2px #7f0222;
-    width: 100px;
-    font-weight: 500;
-  }
-  /*
-Fin del codigo del nuevo slider
-*/
   /*modal*/
 
   .modal-body {
-    width: 70%;
-    height: 60%;
+    width: 48%;
+    height: 50%;
     background-color: white;
     position: relative;
     display: flex;
@@ -251,6 +225,7 @@ Fin del codigo del nuevo slider
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
   }
   .card-image {
     grid-column: 1/2;
@@ -272,8 +247,24 @@ Fin del codigo del nuevo slider
   }
   .descripcion-hamburguesa ul li p {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
   }
+  .bandera {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+  }
+  .nacionalidad {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .descripcion-hamburguesa ul li {
+    margin: 4px auto;
+  }
+
   .descripcion-hamburguesa ul {
     width: 100%;
     margin: auto;
@@ -285,15 +276,15 @@ Fin del codigo del nuevo slider
     display: block;
     margin: 0px auto 7px auto;
   }
+  .img-modal-cerveza {
+    max-width: 100%;
+    width: 200px;
+    height: 320px;
+    object-fit: contain;
+  }
+
   /*modal*/
-  .item-slider button {
-    background-color: white;
-    color: #7f0222;
-    font-size: 17px;
-    text-align: center;
-    padding: 5px;
-    border: solid 2px #7f0222;
-    width: 150px;
-    font-weight: 500;
+  .title-cerveza {
+    font-size: 18px;
   }
 }

@@ -1,85 +1,51 @@
-.container-slider-menu {
-  width: 100%;
-  position: relative;
+#hamburguesas {
   background-image: url("/assets/fondo-hamburguesa.png");
-  background-size: cover;
   background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0px;
-  height: 450px;
-}
-.fondo-hamburguesa {
-  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 65vh;
+}
+.super-container {
   height: 100%;
-  top: -40px;
-  left: 0;
-  z-index: 4;
+  width: 100%;
 }
 .menu-hamburguesa {
-  text-align: center;
-  max-width: 90%;
-  z-index: 4;
-  position: absolute;
-  top: 2%;
-  left: 5%;
+  width: 85%;
+  display: block;
   margin: auto;
+  padding-top: 40px;
 }
-/*
-Este codigo es para el nuevo slider
-*/
-
 .container-slider1 {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 4;
+  margin-top: -30px;
 }
-
 .item-slider {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 350px;
+  height: 350px;
 }
-
-.swiper-slide img {
+.item-slider h6 {
+  color: white;
+  font-size: 18px;
+}
+.item-slider button {
   display: block;
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  width: 110px;
+  border: 2px solid #7f0222;
+  padding: 5px;
+  font-size: 16px;
 }
 
 .img-slider {
-  width: 100%;
+  max-width: 100%;
+  height: 80%;
 }
-.item-slider h6 {
-  margin: 5px auto;
-  font-size: 18px;
-  color: white;
-}
-.item-slider button {
-  background-color: white;
-  color: #7f0222;
-  font-size: 14px;
-  text-align: center;
-  padding: 5px;
-  border: solid 2px #7f0222;
-  width: 100px;
-  font-weight: 500;
-}
-
-/*
-Fin del codigo del nuevo slider
-*/
-
 /*modal*/
 .modal-producto {
   background-color: black;
@@ -128,6 +94,9 @@ Fin del codigo del nuevo slider
 }
 .card-image img {
   max-width: 100%;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
 }
 .name-hamburguesa {
   margin: auto;
@@ -168,36 +137,63 @@ Fin del codigo del nuevo slider
   display: block;
   margin: 0px auto 7px auto;
 }
+
 /*modal*/
 
 @media (min-width: 767px) {
-  .container-slider-menu {
-    max-width: 100%;
-    position: relative;
-    height: 750px;
-    margin: auto;
-  }
-  .fondo-hamburguesa {
-    position: absolute;
+  #hamburguesas {
+    background-image: url("/assets/fondo-hamburguesa.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 85vh;
+  }
+  .super-container {
     height: 100%;
-    top: -16%;
-    left: 0;
-    z-index: -1;
+    width: 100%;
   }
   .menu-hamburguesa {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
     display: block;
-    max-width: 50%;
-    z-index: 1;
-    position: absolute;
-    top: -2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    padding-top: 50px;
+  }
+  .container-slider1 {
+    margin-top: -50px;
+  }
+  .item-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 410px;
+  }
+  .item-slider h6 {
+    color: white;
+    font-size: 18px;
+  }
+  .item-slider button {
+    display: block;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 110px;
+    border: 2px solid #7f0222;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .img-slider {
+    max-width: 100%;
+    height: 85%;
   }
   /*modal*/
 
   .modal-body {
-    width: 70%;
+    width: 60%;
     height: 60%;
     background-color: white;
     position: relative;
@@ -210,6 +206,7 @@ Fin del codigo del nuevo slider
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
   }
   .card-image {
     grid-column: 1/2;
@@ -244,55 +241,11 @@ Fin del codigo del nuevo slider
     display: block;
     margin: 0px auto 7px auto;
   }
+  .card-image img {
+    max-width: 100%;
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+  }
   /*modal*/
-  /*
-Este codigo es para el nuevo slider
-*/
-
-  .container-slider1 {
-    margin-top: 110px;
-    width: 100%;
-    height: auto;
-  }
-
-  .item-slider {
-    background-position: center;
-    background-size: cover;
-    width: 450px;
-    height: 450px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .img-slider {
-    width: 100%;
-  }
-  .item-slider h6 {
-    margin: 5px auto;
-    font-size: 20px;
-    color: white;
-  }
-  .item-slider button {
-    background-color: white;
-    color: #7f0222;
-    font-size: 17px;
-    text-align: center;
-    padding: 5px;
-    border: solid 2px #7f0222;
-    width: 150px;
-    font-weight: 500;
-  }
-
-  /*
-Fin del codigo del nuevo slider
-*/
 }

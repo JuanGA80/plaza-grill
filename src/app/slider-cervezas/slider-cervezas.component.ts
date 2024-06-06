@@ -4,6 +4,11 @@ interface Cervezas {
   title: string;
   imgTitle: string;
   picture: string;
+  nacionalidad: string;
+  bandera: string;
+  cantidad: string;
+  estilo: string;
+  grados: string;
 }
 
 @Component({

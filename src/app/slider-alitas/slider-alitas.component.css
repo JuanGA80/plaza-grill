@@ -1,55 +1,51 @@
-.container-slider-menu-4 {
-  width: 100%;
-  position: relative;
+#alitas {
   background-image: url("/assets/fondo-alitas.png");
-  background-size: cover;
   background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0px;
-  height: 550px;
-}
-
-.menu-cervezas3 {
-}
-
-.item-slider h6 {
-  color: #fff;
-  font-size: 14px;
-}
-
-/*
-Este codigo es para el nuevo slider
-*/
-
-.container-slider4 {
-  margin-top: -90px;
-  width: 100%;
-}
-
-.item-slider {
-  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: transparent;
-  display: flex;
-  width: 450px;
-  height: 450px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.img-slider-alita {
   width: 100%;
-  height: 80%;
-  object-fit: contain;
-  margin: auto;
+  height: 70vh;
+  margin-top: -70px;
 }
-
-/*
-Fin del codigo del nuevo slider*/
+.super-container3 {
+  height: 100%;
+  width: 100%;
+}
+.menu-alitas {
+  width: 85%;
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}
+.container-slider3 {
+  margin-top: -30px;
+}
+.item-slider3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+}
+.item-slider3 h6 {
+  color: white;
+  font-size: 18px;
+}
+.item-slider3 button {
+  display: block;
+  text-align: center;
+  background-color: white;
+  margin: auto;
+  width: 110px;
+  border: 2px solid #7f0222;
+  padding: 5px;
+  font-size: 16px;
+}
+.img-slider-alita {
+  max-width: 100%;
+  height: 80%;
+}
 
 /*modal*/
 .modal-producto {
@@ -59,7 +55,7 @@ Fin del codigo del nuevo slider*/
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   transition: all ease-in 0.5s;
 
   display: flex;
@@ -99,6 +95,9 @@ Fin del codigo del nuevo slider*/
 }
 .card-image img {
   max-width: 100%;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
 }
 .name-hamburguesa {
   margin: auto;
@@ -139,58 +138,62 @@ Fin del codigo del nuevo slider*/
   display: block;
   margin: 0px auto 7px auto;
 }
-.item-slider button {
-  background-color: white;
-  color: #7f0222;
-  font-size: 14px;
-  text-align: center;
-  padding: 5px;
-  border: solid 2px #7f0222;
-  width: 100px;
-  font-weight: 500;
-}
-/*modal*/
-@media (min-width: 767px) {
-  .container-slider-menu-4 {
-    max-width: 100%;
-    position: relative;
-    height: 840px;
-  }
-  .fondo-hamburguesa3 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -35%;
-    left: 0;
-    z-index: -3;
-  }
 
-  .menu-cervezas3 {
-    display: block;
-    max-width: 40%;
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*modal*/
+
+@media (min-width: 767px) {
+  #alitas {
+    background-image: url("/assets/fondo-alitas.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 105vh;
+    margin-top: -70px;
   }
-  .container-slider4 {
+  .super-container3 {
+    height: 100%;
     width: 100%;
   }
-  .item-slider {
-    width: 300px;
-    height: 300px;
+  .menu-alitas {
+    width: 45%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .container-slider3 {
+    margin-top: -60px;
+  }
+  .item-slider3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+  }
+  .item-slider3 h6 {
+    color: white;
+    font-size: 18px;
+  }
+  .item-slider3 button {
+    display: block;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 110px;
+    border: 2px solid #7f0222;
+    padding: 5px;
+    font-size: 16px;
   }
   .img-slider-alita {
-    width: 100%;
+    max-width: 100%;
     height: 80%;
-    object-fit: contain;
-    margin: auto;
   }
   /*modal*/
 
   .modal-body {
-    width: 70%;
+    width: 60%;
     height: 60%;
     background-color: white;
     position: relative;
@@ -203,6 +206,7 @@ Fin del codigo del nuevo slider*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
   }
   .card-image {
     grid-column: 1/2;
@@ -237,42 +241,11 @@ Fin del codigo del nuevo slider*/
     display: block;
     margin: 0px auto 7px auto;
   }
-  /*modal*/
-
-  /*
-Este codigo es para el nuevo slider
-*/
-
-  .item-slider {
-    background-position: center;
-    background-size: cover;
-    width: 550px;
-    height: 550px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -10px;
-  }
-
-  .img-slider-alita {
-    width: 100%;
-    height: 80%;
+  .card-image img {
+    max-width: 100%;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
-    margin: auto;
   }
-  .item-slider button {
-    background-color: white;
-    color: #7f0222;
-    font-size: 14px;
-    text-align: center;
-    padding: 5px;
-    border: solid 2px #7f0222;
-    width: 100px;
-    font-weight: 500;
-  }
-  /*
-Fin del codigo del nuevo slider
-*/
+  /*modal*/
 }
