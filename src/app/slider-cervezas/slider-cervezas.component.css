@@ -1,72 +1,46 @@
 .container-slider-menu-3 {
-  max-width: 100%;
+  width: 100%;
   position: relative;
-  height: 520px;
-  margin: auto;
-  z-index: 1;
+  background-image: url("/assets/fondo-cervezas.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  height: 450px;
 }
 .fondo-hamburguesa2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -11%;
+  top: -20%;
   left: 0;
-  z-index: -2;
+  z-index: 4;
 }
-.carousel {
-  position: absolute !important;
-  top: 7%;
-  left: 0;
-  z-index: 3;
-  width: 100%;
-  height: 400px;
-}
+
 .menu-cervezas {
   text-align: center;
   max-width: 90%;
-  z-index: 1;
   position: absolute;
-  top: 10%;
+  top: -15%;
   left: 5%;
   margin: auto;
-}
-.carousel-item {
-  text-align: center;
-  max-width: 350px;
-  height: 350px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.carousel-item p {
-  font-size: 20px;
-  color: #000;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-.carousel-item img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  text-align: center;
+  z-index: 3;
 }
 
 /*
 Este codigo es para el nuevo slider
 */
 
-.container-slider {
-  position: absolute !important;
-  top: 15%;
-  left: 0;
-  z-index: 50;
+.container-slider-menu2 {
+  position: absolute;
+  top: -10%;
+
   width: 100%;
   height: 400px;
+  z-index: 4;
 }
 
 .item-slider {
@@ -83,70 +57,141 @@ Este codigo es para el nuevo slider
 
 .img-slider-cerveza {
   width: 100%;
-  height: 90%;
+  height: 80%;
   object-fit: contain;
   margin: auto;
+}
+.item-slider h6 {
+  margin-top: -7px;
 }
 
 /*
 Fin del codigo del nuevo slider
 */
+
+/*modal*/
+.modal-producto {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all ease-in 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body {
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.descripcion-hamburguesa h6 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0px auto 7px auto;
+}
+.btn-cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+}
+.modal-body h3 {
+  color: white;
+}
+.card-image {
+  max-width: 350px;
+  height: auto;
+  margin: auto;
+}
+.card-image img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.name-hamburguesa {
+  margin: auto;
+  text-align: center;
+}
+.letras-modal {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.descripcion-hamburguesa {
+  margin: auto;
+}
+.descripcion-hamburguesa ul {
+  width: 70%;
+  margin: auto;
+}
+
+.descripcion-hamburguesa ul li {
+  list-style: circle;
+  color: #7f0222;
+}
+.descripcion-hamburguesa ul li p {
+  color: black;
+  font-size: 14px;
+}
+.descripcion-hamburguesa a {
+  background-color: #7f0222;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  width: 150px;
+  padding: 7px;
+  margin: 12px auto;
+}
+.img-title {
+  display: block;
+  margin: 0px auto 7px auto;
+}
+.item-slider button {
+  background-color: white;
+  color: #7f0222;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  border: solid 2px #7f0222;
+  width: 100px;
+  font-weight: 500;
+}
+/*modal*/
 @media (min-width: 767px) {
   .container-slider-menu-3 {
     max-width: 100%;
     position: relative;
-    height: 750px;
+    height: 700px;
     margin: auto;
   }
-  .fondo-hamburguesa {
+  .fondo-hamburguesa2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -34%;
     left: 0;
     z-index: -1;
-  }
-  .carousel {
-    position: absolute !important;
-    top: 7%;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 650px;
-  }
-
-  .carousel-item {
-    text-align: center;
-    width: 750px;
-    height: 750px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .carousel-item p {
-    font-size: 20px;
-    color: #000;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-  }
-  .carousel-item img {
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
-    text-align: center;
   }
 
   .menu-cervezas {
     display: block;
     max-width: 50%;
-    z-index: 1;
     position: absolute;
-    top: 20%;
+    top: -2%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -155,19 +200,15 @@ Este codigo es para el nuevo slider
 */
 
   .container-slider {
-    position: absolute !important;
-    top: 15%;
-    left: 0;
-    z-index: 50;
+    height: 570px;
     width: 100%;
-    height: 650px;
   }
 
   .item-slider {
     background-position: center;
     background-size: cover;
-    width: 350px;
-    height: 550px;
+    width: 300px;
+    height: 450px;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -177,12 +218,82 @@ Este codigo es para el nuevo slider
 
   .img-slider-cerveza {
     width: 100%;
-    height: 80%;
+    height: 90%;
     object-fit: contain;
     margin: auto;
   }
-
+  .item-slider button {
+    background-color: white;
+    color: #7f0222;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    border: solid 2px #7f0222;
+    width: 100px;
+    font-weight: 500;
+  }
   /*
 Fin del codigo del nuevo slider
 */
+  /*modal*/
+
+  .modal-body {
+    width: 70%;
+    height: 60%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .card-image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .name-hamburguesa {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+  }
+  .descripcion-hamburguesa {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .letras-modal {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .descripcion-hamburguesa ul li p {
+    color: black;
+    font-size: 16px;
+  }
+  .descripcion-hamburguesa ul {
+    width: 100%;
+    margin: auto;
+  }
+  .descripcion-hamburguesa a {
+    margin: 20px auto;
+  }
+  .img-title {
+    display: block;
+    margin: 0px auto 7px auto;
+  }
+  /*modal*/
+  .item-slider button {
+    background-color: white;
+    color: #7f0222;
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+    border: solid 2px #7f0222;
+    width: 150px;
+    font-weight: 500;
+  }
 }

@@ -1,79 +1,49 @@
 .container-slider-menu {
-  max-width: 100%;
+  width: 100%;
   position: relative;
+  background-image: url("/assets/fondo-hamburguesa.png");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
   height: 450px;
-  margin: auto;
-  z-index: 2;
 }
 .fondo-hamburguesa {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: -40px;
   left: 0;
-  z-index: -3;
+  z-index: 4;
 }
-.carousel-item {
-  text-align: center;
-  max-width: 350px;
-  height: 350px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.carousel {
-  position: absolute !important;
-  top: 7%;
-  left: 0;
-  z-index: 3;
-  width: 100%;
-  height: 400px;
-}
-
 .menu-hamburguesa {
   text-align: center;
   max-width: 90%;
-  z-index: -1;
+  z-index: 4;
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 5%;
   margin: auto;
-}
-.carousel-item p {
-  font-size: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-.carousel-item img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  text-align: center;
 }
 /*
 Este codigo es para el nuevo slider
 */
 
 .container-slider1 {
-  position: absolute !important;
-  top: 15%;
-  left: 0;
-  z-index: 3;
+  position: absolute;
   width: 100%;
-  height: 400px;
+  height: auto;
+  z-index: 4;
 }
 
 .item-slider {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 350px;
+  height: 400px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -109,6 +79,7 @@ Este codigo es para el nuevo slider
 /*
 Fin del codigo del nuevo slider
 */
+
 /*modal*/
 .modal-producto {
   background-color: black;
@@ -117,7 +88,7 @@ Fin del codigo del nuevo slider
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   transition: all ease-in 0.5s;
 
   display: flex;
@@ -210,51 +181,16 @@ Fin del codigo del nuevo slider
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -16%;
     left: 0;
     z-index: -1;
   }
-  .carousel {
-    position: absolute !important;
-    top: 7%;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 650px;
-  }
-
-  .carousel-item {
-    text-align: center;
-    width: 750px;
-    height: 750px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .carousel-item p {
-    font-size: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-  }
-  .carousel-item img {
-    width: 450px;
-    height: 450px;
-    object-fit: contain;
-    text-align: center;
-  }
-
   .menu-hamburguesa {
     display: block;
     max-width: 50%;
     z-index: 1;
     position: absolute;
-    top: 20%;
+    top: -2%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -314,12 +250,9 @@ Este codigo es para el nuevo slider
 */
 
   .container-slider1 {
-    position: absolute !important;
-    top: 20%;
-    left: 0;
-    z-index: 3;
+    margin-top: 110px;
     width: 100%;
-    height: 550px;
+    height: auto;
   }
 
   .item-slider {

@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface Hamburguesas {
+interface Alitas {
   id: number;
   title: string;
-  imagen: string;
+  imagenAlita: string;
 }
 
 @Component({
@@ -12,6 +12,14 @@ interface Hamburguesas {
   styleUrl: './slider-alitas.component.css',
 })
 export class SliderAlitasComponent implements OnInit {
-  @Input() Hamburguesa: Hamburguesas[] = [];
+  modalAlita = false;
+  @Input() Alita: Alitas[] = [];
   ngOnInit(): void {}
+
+  openModalAlita(index: number) {
+    this.modalAlita = true;
+  }
+  closeModalAlita() {
+    this.modalAlita = false;
+  }
 }

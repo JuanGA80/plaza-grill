@@ -14,7 +14,13 @@ interface Hamburguesas {
 interface Cervezas {
   id: number;
   title: string;
+  imgTitle: string;
   picture: string;
+}
+interface Alitas {
+  id: number;
+  title: string;
+  imagenAlita: string;
 }
 @Component({
   selector: 'app-root',
@@ -146,34 +152,98 @@ export class AppComponent {
 
   texto: Cervezas[] = [
     {
-      id: 1,
-      title: 'Chela 1',
+      id: 0,
+      title: 'Stowford Berries',
+      imgTitle: '',
       picture: 'assets/chela1.png',
+    },
+    {
+      id: 1,
+      title: 'Liefmans Fruitesse',
+      imgTitle: '',
+      picture: 'assets/chela2.png',
     },
     {
       id: 2,
-      title: 'Chela 2',
-      picture: 'assets/chela2.png',
+      title: 'Guinness',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
     },
     {
       id: 3,
-      title: 'Chela 3',
-      picture: 'assets/chela3.png',
-    },
-    {
-      id: 4,
-      title: 'Chela 4',
+      title: 'Lagrimas Negras',
+      imgTitle: '',
       picture: 'assets/chela1.png',
     },
     {
-      id: 5,
-      title: 'Chela 5',
+      id: 4,
+      title: 'Quilmes',
+      imgTitle: '',
       picture: 'assets/chela2.png',
     },
     {
-      id: 6,
-      title: 'Chela 6',
+      id: 5,
+      title: 'Barista',
+      imgTitle: '',
       picture: 'assets/chela3.png',
+    },
+    {
+      id: 6,
+      title: 'Frankziskaner',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
+    },
+    {
+      id: 7,
+      title: 'Gulden Daark',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
+    },
+    {
+      id: 8,
+      title: 'Old Rasputin',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
+    },
+    {
+      id: 9,
+      title: 'Double Chocolate',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
+    },
+    {
+      id: 10,
+      title: 'Hob Goblin',
+      imgTitle: '',
+      picture: 'assets/chela3.png',
+    },
+  ];
+
+  date: Alitas[] = [
+    {
+      id: 0,
+      title: 'Alita 1',
+      imagenAlita: 'assets/foto-alitas.png',
+    },
+    {
+      id: 1,
+      title: 'Alita 2',
+      imagenAlita: 'assets/foto-alitas.png',
+    },
+    {
+      id: 2,
+      title: 'Alita 3',
+      imagenAlita: 'assets/foto-alitas.png',
+    },
+    {
+      id: 3,
+      title: 'Alita 4',
+      imagenAlita: 'assets/foto-alitas.png',
+    },
+    {
+      id: 4,
+      title: 'Alita 5',
+      imagenAlita: 'assets/foto-alitas.png',
     },
   ];
 }
