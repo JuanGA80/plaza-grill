@@ -99,9 +99,11 @@
 }
 .img-modal-cerveza {
   max-width: 100%;
-  width: 220px;
-  height: 270px;
+  width: 170px;
+  height: 200px;
   object-fit: contain;
+  display: block;
+  margin: 7px auto;
 }
 .name-hamburguesa {
   margin: auto;
@@ -212,8 +214,144 @@
   /*modal*/
 
   .modal-body {
-    width: 48%;
-    height: 50%;
+    width: 55%;
+    height: 60%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+  }
+  .card-image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .name-hamburguesa {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+  }
+  .descripcion-hamburguesa {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .letras-modal {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .descripcion-hamburguesa ul li p {
+    color: black;
+    font-size: 18px;
+  }
+  .bandera {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+  }
+  .nacionalidad {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .descripcion-hamburguesa ul li {
+    margin: 4px auto;
+  }
+
+  .descripcion-hamburguesa ul {
+    width: 100%;
+    margin: auto;
+  }
+  .descripcion-hamburguesa a {
+    margin: 20px auto;
+  }
+  .img-title {
+    display: block;
+    margin: 0px auto 7px auto;
+  }
+  .img-modal-cerveza {
+    max-width: 100%;
+    width: 200px;
+    height: 320px;
+    object-fit: contain;
+  }
+
+  /*modal*/
+  .title-cerveza {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  #hamburguesas {
+    background-image: url("/assets/fondo-hamburguesa.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  #cervezas {
+    background-image: url("/assets/fondo-cervezas.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    margin-top: -107px;
+  }
+  .super-container2 {
+    height: 100%;
+    width: 100%;
+  }
+  .menu-cerveza {
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .container-slider2 {
+    margin-top: -35px;
+  }
+  .item-slider2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+    height: 410px;
+  }
+  .item-slider2 button {
+    display: block;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 110px;
+    border: 2px solid #7f0222;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .img-slider-cerveza {
+    max-width: 100%;
+    height: 80%;
+  }
+
+  /*modal*/
+
+  .modal-body {
+    width: 55%;
+    height: 60%;
     background-color: white;
     position: relative;
     display: flex;

@@ -1,4 +1,4 @@
-<div class="container-slider-menu-4" id="alitas">
+<div id="alitas">
   <div class="super-container3">
     <img src="assets/texto-alitas-boneles.png" alt="" class="menu-alitas" />
 
@@ -41,11 +41,10 @@
             <h6 class="title-cerveza">{{ currentModalAlita.title }}</h6>
             <h6>Ingredientes</h6>
             <ul>
-              <li>200 gramos de alitas marinadas</li>
-              <li>Salsa de su preferencia</li>
+              <li>{{ currentModalAlita.texto1 }}</li>
+              <li>{{ currentModalAlita.texto2 }}</li>
               <li>
-                Nuestras alitas se acompañan con una porción de aderezo ranch o
-                blue cheese
+                {{ currentModalAlita.texto3 }}
               </li>
             </ul>
             <a href="#">Comprar</a>

@@ -39,7 +39,7 @@
 }
 @media (min-width: 767px) {
   .contacto {
-    margin-top: -300px;
+    margin-top: -100px;
     background-color: black;
     width: 100%;
     display: flex;

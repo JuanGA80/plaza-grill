@@ -8,6 +8,7 @@ interface Hamburguesas {
   id: number;
   title: string;
   imgTitle: string;
+  foto: string;
   picture: string;
   ingredientes: string[];
 }
@@ -26,6 +27,9 @@ interface Alitas {
   id: number;
   title: string;
   imagenAlita: string;
+  texto1: string;
+  texto2: string;
+  texto3: string;
 }
 @Component({
   selector: 'app-root',
@@ -79,7 +83,8 @@ export class AppComponent {
       id: 0,
       title: 'BBQ Especial',
       imgTitle: 'assets/bbq-especial.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-bbq.png',
+      picture: 'assets/f-bbq.png',
       ingredientes: [
         '200 gramos de carne',
         'Jamón',
@@ -93,7 +98,8 @@ export class AppComponent {
       id: 1,
       title: 'Arrachera',
       imgTitle: 'assets/arrachera.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-arrachera.png',
+      picture: 'assets/f-arrachera.png',
       ingredientes: [
         '200 gramos de jugosos filetes de Arrachera',
         'Servida con queso manchego',
@@ -104,7 +110,8 @@ export class AppComponent {
       id: 2,
       title: 'Bacon Bomb',
       imgTitle: 'assets/bacon.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-bacon.png',
+      picture: 'assets/f-bacon.png',
       ingredientes: [
         '200 gramos de carne de res',
         'Envuelta en tocino',
@@ -115,7 +122,8 @@ export class AppComponent {
       id: 3,
       title: 'Gringa',
       imgTitle: 'assets/gringa.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-gringa.png',
+      picture: 'assets/f-gringa.png',
       ingredientes: [
         '200 gramos de carne de res',
         'Queso Manchego',
@@ -129,7 +137,8 @@ export class AppComponent {
       id: 4,
       title: 'Marinera',
       imgTitle: 'assets/marinera.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-marinera.png',
+      picture: 'assets/f-marinera.png',
       ingredientes: [
         '100 gramos de camarones salteados a la mantequilla',
         'Cebolla caramelizada',
@@ -143,7 +152,8 @@ export class AppComponent {
       id: 5,
       title: 'Gourmet',
       imgTitle: 'assets/gourmet.png',
-      picture: 'assets/hamburguesa.png',
+      foto: 'assets/h-gourmet.png',
+      picture: 'assets/f-gourmet.png',
       ingredientes: [
         '200 gramos de carne',
         'Champiñones salteados a la mantequilla',
@@ -228,7 +238,7 @@ export class AppComponent {
       imgTitle: '',
       picture: 'assets/franzciscaner.png',
       nacionalidad: 'Alemania',
-      bandera: 'assets/alemania.webp',
+      bandera: 'assets/alemania.png',
       cantidad: '500ml',
       estilo: 'Estilo Weissbier',
       grados: '5',
@@ -250,7 +260,7 @@ export class AppComponent {
       imgTitle: '',
       picture: 'assets/old-rasputin.png',
       nacionalidad: 'U.S.A',
-      bandera: 'assets/usa.webp',
+      bandera: 'assets/usa.png',
       cantidad: '330ml',
       estilo: 'Imperial Stout',
       grados: '9',
@@ -282,28 +292,46 @@ export class AppComponent {
   date: Alitas[] = [
     {
       id: 0,
-      title: 'Alitas BBQ',
+      title: 'Alitas',
       imagenAlita: 'assets/foto-alitas.png',
+      texto1: '200 gramos de alitas marinadas',
+      texto2: 'Salsa de su preferencia',
+      texto3:
+        'Nuestras alitas se acompañan con una porción de aderezo ranch o blue cheese',
     },
     {
       id: 1,
-      title: 'Alitas Mango Spicy',
-      imagenAlita: 'assets/foto-alitas.png',
+      title: 'Bonelees',
+      imagenAlita: 'assets/boneles.png',
+      texto1: 'Trocitos de pollo empanizados y fritos',
+      texto2: 'Bañados en la salsa de su elección',
+      texto3:
+        'Nuestros boneless se acompañan con una porción de aderezo ranch o blue cheese',
     },
     {
       id: 2,
-      title: 'Alitas BBQ Habanero',
-      imagenAlita: 'assets/foto-alitas.png',
+      title: 'Costillas',
+      imagenAlita: 'assets/costillas.png',
+      texto1: '500 gramos de jugosas costillas',
+      texto2: 'Horneadas en salsa BBQ',
+      texto3: 'Acompañadas de un elote dulce y papas a la francesa',
     },
     {
       id: 3,
-      title: 'Alitas Buffalo',
-      imagenAlita: 'assets/foto-alitas.png',
+      title: 'Salsas',
+      imagenAlita: 'assets/menu.png',
+      texto1: 'Salsas para tus alitas o bonelees',
+      texto2: 'BBQ,Blueberry, Tamarindo Hot, Baby Mango, Mango Spicy',
+      texto3:
+        'Bbq-Chipotle, Bbq-Tabasco, Bbq Habanero, Buffalo, Cajun y Habanero Fuck',
     },
     {
       id: 4,
-      title: 'Alita Habanero Fuck',
+      title: 'Y mucho más',
       imagenAlita: 'assets/foto-alitas.png',
+      texto1: 'Postres: Paya de queso, Pay de limón, Tiramisú de fresa',
+      texto2: 'Bebidas: Refresco, Agua Mineral, Limonada, Carajillo',
+      texto3: 'Extras: Puré de papa, Orden de tocino, Chiles toreados',
     },
   ];
 }

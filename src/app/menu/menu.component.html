@@ -7,7 +7,11 @@
     <li><a href="#nosotros" (click)="verMenu()">Nosotros</a></li>
     <li><a href="#ubicacion" (click)="verMenu()">Ubicación</a></li>
     <li><a href="#promociones" (click)="verMenu()">Promociones</a></li>
-    <li><a href="#menu" (click)="verMenu()">Menú</a></li>
+    <li>
+      <a href="/assets/menu-plaza-grill.pdf" target="_blank" (click)="verMenu()"
+        >Menú</a
+      >
+    </li>
   </ul>
   <div id="menu_on" (click)="verMenu()" [ngClass]="btnMenu ? 'btnActive' : ''">
     <span></span>

@@ -11,6 +11,7 @@ interface Hamburguesas {
   id: number;
   title: string;
   imgTitle: string;
+  foto: string;
   picture: string;
   ingredientes: string[];
 }

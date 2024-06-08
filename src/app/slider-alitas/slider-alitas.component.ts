@@ -4,6 +4,9 @@ interface Alitas {
   id: number;
   title: string;
   imagenAlita: string;
+  texto1: string;
+  texto2: string;
+  texto3: string;
 }
 
 @Component({
