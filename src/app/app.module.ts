@@ -20,6 +20,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { SliderAlitasComponent } from './slider-alitas/slider-alitas.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
+import { OpinionesComponent } from './opiniones/opiniones.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
     SliderAlitasComponent,
     ContactoComponent,
     FooterComponent,
+    OpinionesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgFor, BrowserAnimationsModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
