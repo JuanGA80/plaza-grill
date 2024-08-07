@@ -87,30 +87,15 @@
 .modal-body h3 {
   color: white;
 }
-.card-image {
-  max-width: 300px;
-  height: 300px;
-  margin: auto;
-  padding: 10px;
-}
-.card-image img {
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  padding: 10px;
+.descripcion-hamburguesa h3 {
+  color: #7f0222;
+  text-align: center;
 }
 .name-hamburguesa {
   margin: auto;
   text-align: center;
 }
-.letras-modal {
-  max-width: 80%;
-  text-align: center;
-  margin: auto;
-}
+
 .descripcion-hamburguesa {
   margin: auto;
 }
@@ -139,7 +124,8 @@
 }
 .img-title {
   display: block;
-  margin: 0px auto 7px auto;
+  margin: 0px auto 0px auto;
+  max-width: 90%;
 }
 
 /*modal*/
@@ -197,7 +183,7 @@
   /*modal*/
 
   .modal-body {
-    width: 70%;
+    width: 50%;
     height: 60%;
     background-color: white;
     position: relative;
@@ -210,32 +196,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 0px;
   }
-  .card-image {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  .name-hamburguesa {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-bottom: 50px;
-  }
-  .descripcion-hamburguesa {
-    grid-column: 2/3;
-    grid-row: 1/3;
-  }
+
   .letras-modal {
     max-width: 100%;
     text-align: center;
     margin: auto;
   }
+
   .descripcion-hamburguesa ul li p {
     color: black;
     font-size: 16px;
   }
   .descripcion-hamburguesa ul {
-    width: 100%;
+    width: 50%;
     margin: auto;
   }
   .descripcion-hamburguesa a {
@@ -243,11 +218,10 @@
   }
   .img-title {
     display: block;
-    margin: 0px auto 7px auto;
+    margin: 0px auto 0px auto;
+    max-width: 70%;
   }
-  .card-image img {
-    max-width: 100%;
-  }
+
   /*modal*/
 }
 
@@ -258,7 +232,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90 vh !important;
+    height: 90vh !important;
   }
   .super-container {
     height: 100%;
@@ -304,8 +278,8 @@
   /*modal*/
 
   .modal-body {
-    width: 70%;
-    height: 60%;
+    width: 40%;
+    height: 80%;
     background-color: white;
     position: relative;
     display: flex;
@@ -314,23 +288,25 @@
     flex-direction: column;
   }
   .card-producto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   .card-image {
-    grid-column: 1/2;
-    grid-row: 1/3;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .card-image h3 {
+    text-align: center;
   }
   .name-hamburguesa {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: auto;
+    grid-row: auto;
     margin-bottom: 50px;
   }
   .descripcion-hamburguesa {
-    grid-column: 2/3;
-    grid-row: 1/3;
+    grid-column: auto;
+    grid-row: auto;
   }
   .letras-modal {
     max-width: 100%;
@@ -339,22 +315,16 @@
   }
   .descripcion-hamburguesa ul li p {
     color: black;
-    font-size: 16px;
+    font-size: 20px;
   }
   .descripcion-hamburguesa ul {
-    width: 100%;
+    width: 50%;
     margin: auto;
   }
   .descripcion-hamburguesa a {
     margin: 20px auto;
   }
-  .img-title {
-    display: block;
-    margin: 0px auto 7px auto;
-  }
-  .card-image img {
-    max-width: 100%;
-  }
+
   /*modal*/
 }
 @media (min-width: 1200px) {

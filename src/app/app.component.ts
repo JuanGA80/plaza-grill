@@ -9,7 +9,6 @@ interface Hamburguesas {
   title: string;
   imgTitle: string;
   foto: string;
-  picture: string;
   ingredientes: string[];
 }
 interface Cervezas {
@@ -82,9 +81,8 @@ export class AppComponent {
     {
       id: 0,
       title: 'BBQ Especial',
-      imgTitle: 'assets/bbq-especial.png',
-      foto: 'assets/h-bbq.png',
-      picture: 'assets/f-bbq.png',
+      imgTitle: 'assets/h-1.png',
+      foto: 'assets/h-1.png',
       ingredientes: [
         '200 gramos de carne',
         'Jamón',
@@ -97,9 +95,8 @@ export class AppComponent {
     {
       id: 1,
       title: 'Arrachera',
-      imgTitle: 'assets/arrachera.png',
-      foto: 'assets/h-arrachera.png',
-      picture: 'assets/f-arrachera.png',
+      imgTitle: 'assets/h-2.png',
+      foto: 'assets/h-2.png',
       ingredientes: [
         '200 gramos de jugosos filetes de Arrachera',
         'Servida con queso manchego',
@@ -109,9 +106,8 @@ export class AppComponent {
     {
       id: 2,
       title: 'Bacon Bomb',
-      imgTitle: 'assets/bacon.png',
-      foto: 'assets/h-bacon.png',
-      picture: 'assets/f-bacon.png',
+      imgTitle: 'assets/h-3.png',
+      foto: 'assets/h-3.png',
       ingredientes: [
         '200 gramos de carne de res',
         'Envuelta en tocino',
@@ -121,9 +117,8 @@ export class AppComponent {
     {
       id: 3,
       title: 'Gringa',
-      imgTitle: 'assets/gringa.png',
-      foto: 'assets/h-gringa.png',
-      picture: 'assets/f-gringa.png',
+      imgTitle: 'assets/h-4.png',
+      foto: 'assets/h-4.png',
       ingredientes: [
         '200 gramos de carne de res',
         'Queso Manchego',
@@ -136,9 +131,8 @@ export class AppComponent {
     {
       id: 4,
       title: 'Marinera',
-      imgTitle: 'assets/marinera.png',
-      foto: 'assets/h-marinera.png',
-      picture: 'assets/f-marinera.png',
+      imgTitle: 'assets/h-5.png',
+      foto: 'assets/h-5.png',
       ingredientes: [
         '100 gramos de camarones salteados a la mantequilla',
         'Cebolla caramelizada',
@@ -151,9 +145,8 @@ export class AppComponent {
     {
       id: 5,
       title: 'Gourmet',
-      imgTitle: 'assets/gourmet.png',
-      foto: 'assets/h-gourmet.png',
-      picture: 'assets/f-gourmet.png',
+      imgTitle: 'assets/h-6.png',
+      foto: 'assets/h-6.png',
       ingredientes: [
         '200 gramos de carne',
         'Champiñones salteados a la mantequilla',
