@@ -19,7 +19,7 @@
         *ngFor="let date of Alita; let i = index"
       >
         <img src="{{ date.imagenAlita }}" alt="" class="img-slider-alita" />
-        <h6>{{ date.title }}</h6>
+
         <button (click)="openModalAlita(i)">Saber más</button>
       </swiper-slide>
     </swiper-container>
@@ -34,19 +34,14 @@
       <div class="modal-body">
         <div class="card-producto">
           <div class="card-image">
-            <img src="{{ currentModalAlita.imagenAlita }}" alt="" />
+            <img
+              src="{{ currentModalAlita.imgModal }}"
+              alt=""
+              class="img-alitas"
+            />
           </div>
 
           <div class="descripcion-hamburguesa">
-            <h6 class="title-cerveza">{{ currentModalAlita.title }}</h6>
-            <h6>Ingredientes</h6>
-            <ul>
-              <li>{{ currentModalAlita.texto1 }}</li>
-              <li>{{ currentModalAlita.texto2 }}</li>
-              <li>
-                {{ currentModalAlita.texto3 }}
-              </li>
-            </ul>
             <a href="#">Comprar</a>
           </div>
         </div>

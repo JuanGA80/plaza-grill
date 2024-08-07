@@ -26,9 +26,7 @@ interface Alitas {
   id: number;
   title: string;
   imagenAlita: string;
-  texto1: string;
-  texto2: string;
-  texto3: string;
+  imgModal: String;
 }
 @Component({
   selector: 'app-root',
@@ -41,119 +39,119 @@ export class AppComponent {
   data: Imagenes[] = [
     {
       id: 1,
-      imageSrc: 'img1.png',
+      imageSrc: 'galery-1.JPG',
     },
     {
       id: 2,
-      imageSrc: 'img2.png',
+      imageSrc: 'galery-4.JPG',
     },
     {
       id: 3,
-      imageSrc: 'img3.png',
+      imageSrc: 'galery-7.JPG',
     },
     {
       id: 4,
-      imageSrc: 'img1.png',
+      imageSrc: 'galery-2.JPG',
     },
     {
       id: 5,
-      imageSrc: 'img2.png',
+      imageSrc: 'galery-5.JPG',
     },
     {
       id: 6,
-      imageSrc: 'img3.png',
+      imageSrc: 'galery-8.JPG',
     },
     {
       id: 7,
-      imageSrc: 'img1.png',
+      imageSrc: 'galery-10.png',
     },
     {
       id: 8,
-      imageSrc: 'img2.png',
+      imageSrc: 'galery-8.JPG',
     },
     {
       id: 9,
-      imageSrc: 'img1.png',
+      imageSrc: 'galery-9.JPG',
     },
   ];
 
   info: Hamburguesas[] = [
     {
       id: 0,
-      title: 'BBQ Especial',
+      title: 'Pizza Burguer',
       imgTitle: 'assets/h-1.png',
       foto: 'assets/h-1.png',
       ingredientes: [
-        '200 gramos de carne',
-        'Jamón',
-        'Queso cheddar',
+        '225 gramos de carne',
+        'Pepperoni',
         'Queso Manchego',
-        'Tocino',
-        'Aderezada cono nuestra salsa BBQ',
+        'Salsa de tomate',
+        'Una de nuestras carnes de hamburguesa',
       ],
     },
     {
       id: 1,
-      title: 'Arrachera',
+      title: 'Smash Burguer',
       imgTitle: 'assets/h-2.png',
       foto: 'assets/h-2.png',
       ingredientes: [
-        '200 gramos de jugosos filetes de Arrachera',
-        'Servida con queso manchego',
-        'Tocino',
+        '200 gramos de carne ',
+        'Queso manchego ',
+        'Mermelada de tocino',
+        'Cebolla caramelizada',
+        'Todo envuelto en una masa de nuestros bollos y horneada al momento',
+        'Tiempo aproximado de cocción de 25 minutos',
       ],
     },
     {
       id: 2,
-      title: 'Bacon Bomb',
+      title: 'Chicken Especial',
       imgTitle: 'assets/h-3.png',
       foto: 'assets/h-3.png',
       ingredientes: [
-        '200 gramos de carne de res',
-        'Envuelta en tocino',
-        'Se sirve con queso manchego',
+        '250 gramos de tiritas de pechuga de pollo empanizadas ',
+        'Quso cheddar',
+        'Queso manchego',
+        'Tocino',
       ],
     },
     {
       id: 3,
-      title: 'Gringa',
+      title: 'Chilli Cheese Burguer',
       imgTitle: 'assets/h-4.png',
       foto: 'assets/h-4.png',
       ingredientes: [
-        '200 gramos de carne de res',
-        'Queso Manchego',
+        '300 gramos de carne',
+        'Todo el estilo Texano del Chilli beans',
         'Queso cheddar',
-        'Mermelada de tocino',
-        'Cebolla caramelizada',
-        'Sazonada con un rico BBQ preparado con Whiskey Jack Daniel´s',
       ],
     },
     {
       id: 4,
-      title: 'Marinera',
+      title: 'H.D.T.P.M.',
       imgTitle: 'assets/h-5.png',
       foto: 'assets/h-5.png',
       ingredientes: [
-        '100 gramos de camarones salteados a la mantequilla',
-        'Cebolla caramelizada',
-        '200 gramos de carne',
-        'Queso cheddar',
-        'Queso Manchego',
+        '400 gramos de carne, 2 palitos de queso mozarrella',
         'Tocino',
+        'Pepperoni',
+        'Piña asada',
+        'Queso cheddar',
+        'Queso manchego',
       ],
     },
     {
       id: 5,
-      title: 'Gourmet',
+      title: 'Jack Daniel´s BBQ',
       imgTitle: 'assets/h-6.png',
       foto: 'assets/h-6.png',
       ingredientes: [
         '200 gramos de carne',
-        'Champiñones salteados a la mantequilla',
-        'Cebolla caramelizada',
+        'Mermelada de tocino',
         'Queso cheddar',
         'Queso Manchego',
-        'Tocino',
+        'Cebolla caramelizada',
+        'Sazonada con un rico BBQ preparado con Whiskey Jack Daniel´s',
       ],
     },
   ];
@@ -287,44 +285,19 @@ export class AppComponent {
       id: 0,
       title: 'Alitas',
       imagenAlita: 'assets/foto-alitas.png',
-      texto1: '200 gramos de alitas marinadas',
-      texto2: 'Salsa de su preferencia',
-      texto3:
-        'Nuestras alitas se acompañan con una porción de aderezo ranch o blue cheese',
+      imgModal: 'assets/menu.png',
     },
     {
       id: 1,
       title: 'Bonelees',
       imagenAlita: 'assets/boneles.png',
-      texto1: 'Trocitos de pollo empanizados y fritos',
-      texto2: 'Bañados en la salsa de su elección',
-      texto3:
-        'Nuestros boneless se acompañan con una porción de aderezo ranch o blue cheese',
+      imgModal: 'assets/menu.png',
     },
     {
       id: 2,
       title: 'Costillas',
       imagenAlita: 'assets/costillas.png',
-      texto1: '500 gramos de jugosas costillas',
-      texto2: 'Horneadas en salsa BBQ',
-      texto3: 'Acompañadas de un elote dulce y papas a la francesa',
-    },
-    {
-      id: 3,
-      title: 'Salsas',
-      imagenAlita: 'assets/menu.png',
-      texto1: 'Salsas para tus alitas o bonelees',
-      texto2: 'BBQ,Blueberry, Tamarindo Hot, Baby Mango, Mango Spicy',
-      texto3:
-        'Bbq-Chipotle, Bbq-Tabasco, Bbq Habanero, Buffalo, Cajun y Habanero Fuck',
-    },
-    {
-      id: 4,
-      title: 'Y mucho más',
-      imagenAlita: 'assets/foto-alitas.png',
-      texto1: 'Postres: Paya de queso, Pay de limón, Tiramisú de fresa',
-      texto2: 'Bebidas: Refresco, Agua Mineral, Limonada, Carajillo',
-      texto3: 'Extras: Puré de papa, Orden de tocino, Chiles toreados',
+      imgModal: 'assets/menu.png',
     },
   ];
 }

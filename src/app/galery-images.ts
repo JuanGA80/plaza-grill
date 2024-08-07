@@ -3,38 +3,38 @@ import { Imagenes } from './images';
 export const Images: Imagenes[] = [
   {
     id: 1,
-    imageSrc: 'img1.png',
+    imageSrc: 'galery-1.JPG',
   },
   {
     id: 2,
-    imageSrc: 'img2.png',
+    imageSrc: 'galery-2.JPG',
   },
   {
     id: 3,
-    imageSrc: 'img3.png',
+    imageSrc: 'galery-3.JPG',
   },
   {
     id: 4,
-    imageSrc: 'img1.png',
+    imageSrc: 'galery-4.JPG',
   },
   {
     id: 5,
-    imageSrc: 'img2.png',
+    imageSrc: 'galery-5.JPG',
   },
   {
     id: 6,
-    imageSrc: 'img3.png',
+    imageSrc: 'galery-6.JPG',
   },
   {
     id: 7,
-    imageSrc: 'img1.png',
+    imageSrc: 'galery-7.JPG',
   },
   {
     id: 8,
-    imageSrc: 'img2.png',
+    imageSrc: 'galery-8.JPG',
   },
   {
     id: 9,
-    imageSrc: 'img1.png',
+    imageSrc: 'galery-9.JPG',
   },
 ];
