@@ -39,27 +39,27 @@ export class AppComponent {
   data: Imagenes[] = [
     {
       id: 1,
-      imageSrc: 'galery-1.JPG',
+      imageSrc: 'galery-1.jpg',
     },
     {
       id: 2,
-      imageSrc: 'galery-4.JPG',
+      imageSrc: 'galery-4.jpg',
     },
     {
       id: 3,
-      imageSrc: 'galery-7.JPG',
+      imageSrc: 'galery-7.jpg',
     },
     {
       id: 4,
-      imageSrc: 'galery-2.JPG',
+      imageSrc: 'galery-2.jpg',
     },
     {
       id: 5,
-      imageSrc: 'galery-5.JPG',
+      imageSrc: 'galery-5.jpg',
     },
     {
       id: 6,
-      imageSrc: 'galery-8.JPG',
+      imageSrc: 'galery-8.jpg',
     },
     {
       id: 7,
@@ -67,11 +67,11 @@ export class AppComponent {
     },
     {
       id: 8,
-      imageSrc: 'galery-8.JPG',
+      imageSrc: 'galery-8.jpg',
     },
     {
       id: 9,
-      imageSrc: 'galery-9.JPG',
+      imageSrc: 'galery-9.jpg',
     },
   ];
 
@@ -94,6 +94,7 @@ export class AppComponent {
       title: 'Smash Burguer',
       imgTitle: 'assets/h-2.png',
       foto: 'assets/h-2.png',
+     
       ingredientes: [
         '200 gramos de carne ',
         'Queso manchego ',

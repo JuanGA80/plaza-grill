@@ -19,7 +19,7 @@ h2 {
 .container-opiniones {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente si es necesario */
+   /* Centra verticalmente si es necesario */
   width: 100%;
 }
 

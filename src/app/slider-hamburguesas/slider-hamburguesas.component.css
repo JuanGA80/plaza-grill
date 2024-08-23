@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 60vh;
+  height: 554px;
 }
 .super-container {
   height: 100%;
@@ -24,6 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 34px;
   width: 350px;
   height: 350px;
 }
@@ -179,6 +180,7 @@
   .img-slider {
     max-width: 90%;
     height: 90%;
+    margin-top: 30px;
   }
   /*modal*/
 
@@ -224,7 +226,6 @@
 
   /*modal*/
 }
-
 @media (min-width: 1024px) {
   #hamburguesas {
     background-image: url("/assets/fondo-hamburguesa.png");
@@ -232,7 +233,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90vh !important;
+    height: 780px
   }
   .super-container {
     height: 100%;
@@ -254,6 +255,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 49px;
     width: 470px;
     height: 470px;
   }
@@ -327,16 +329,6 @@
 
   /*modal*/
 }
-@media (min-width: 1200px) {
-  #hamburguesas {
-    background-image: url("/assets/fondo-hamburguesa.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 85vh;
-  }
-}
 
 @media (min-width: 1400px) {
   #hamburguesas {
@@ -345,10 +337,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: 800px;
   }
   .img-slider {
     max-width: 100%;
     height: 80%;
+    padding: 0px 40px;
+    width: 400px;
   }
 }
