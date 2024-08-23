@@ -4,6 +4,7 @@
   background-color: #000000;
   padding-bottom: 40px;
   padding-top: 20px;
+  margin-top: -78px;
 }
 
 h2 {
@@ -88,6 +89,6 @@ p {
   .opiniones {
     padding: 0;
     padding-bottom: 135px;
-    padding-top: 60px;
-
+    padding-top: 6px;
+    margin-top: -1px;
 }}
