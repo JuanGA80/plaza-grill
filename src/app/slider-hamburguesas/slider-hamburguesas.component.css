@@ -50,7 +50,8 @@
 }
 /*modal*/
 .modal-producto {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+
   width: 100%;
   height: 100%;
   position: fixed;
@@ -65,8 +66,9 @@
 }
 .modal-body {
   width: 90%;
-  height: 80%;
-  background-color: white;
+  height: 82%;
+  border-radius: 45px;
+  background-color: #F7D04E;;
   position: relative;
   display: flex;
   justify-content: center;
@@ -127,7 +129,7 @@
 .img-title {
   display: block;
   margin: 0px auto 0px auto;
-  max-width: 90%;
+  max-width: 54%;
 }
 
 /*modal*/
@@ -187,8 +189,9 @@
 
   .modal-body {
     width: 50%;
-    height: 60%;
-    background-color: white;
+    height: 55%;
+    border-radius: 45px;
+    background-color: #F7D04E;
     position: relative;
     display: flex;
     justify-content: center;
@@ -197,8 +200,8 @@
   }
   .card-producto {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
     gap: 0px;
   }
 
@@ -222,7 +225,7 @@
   .img-title {
     display: block;
     margin: 0px auto 0px auto;
-    max-width: 65%;
+    max-width: 50%;
   }
 
   /*modal*/
@@ -282,8 +285,9 @@
 
   .modal-body {
     width: 40%;
-    height: 80%;
-    background-color: white;
+    height: 570px;
+    border-radius: 45px;
+    background-color: #F7D04E;
     position: relative;
     display: flex;
     justify-content: center;
@@ -339,6 +343,17 @@
     background-size: cover;
     width: 100%;
     height: 800px;
+  }
+  .modal-body {
+    width: 40%;
+    height: 43%;
+    border-radius: 45px;
+    background-color: #F7D04E;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .img-slider {
     max-width: 100%;
