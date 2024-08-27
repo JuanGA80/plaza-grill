@@ -150,10 +150,9 @@
 }
   .bandera {
     position: absolute; /* Permite que la imagen ocupe todo el contenedor */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 92%; /* Ocupa toda la altura del contenedor */
+   
+    width: 105%; /* Ocupa todo el ancho del contenedor */
+    height: 86%; /* Ocupa toda la altura del contenedor */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
     background-position: center center; /* Centra la imagen dentro del contenedor */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
