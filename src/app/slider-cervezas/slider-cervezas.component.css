@@ -47,7 +47,6 @@
 /*modal*/
 .modal-producto {
   background-color: rgba(0, 0, 0, 0.5);
-
   width: 100%;
   height: 100%;
   position: fixed;
@@ -63,7 +62,7 @@
 .modal-body {
   width: 90%;
   height: 85%;
-  background-color: #e2f9ff;
+  background-color: transparent;
   border-radius: 30px;
   position: relative;
   display: flex;
@@ -119,6 +118,8 @@
 }
 .descripcion-hamburguesa {
   margin: auto;
+  background-color: rgba(211, 211, 211, 0.5);
+        border-radius: 15px;
 }
 .descripcion-hamburguesa ul {
   width: 80%;
@@ -147,13 +148,18 @@
   display: block;
   margin: 0px auto 7px auto;
 }
-.bandera {
-  width: 90px;
-  height: 60px;
-  object-fit: cover;
-  display: block;
-  margin: 10px auto;
-}
+  .bandera {
+    position: absolute; /* Permite que la imagen ocupe todo el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 92%; /* Ocupa toda la altura del contenedor */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    border-radius: 30px;
+    z-index: -1; /* Coloca la imagen detrás del contenido del modal */
+  }
 .nacionalidad {
   font-size: 18px;
   font-weight: 600;
@@ -161,6 +167,7 @@
 }
 .descripcion-hamburguesa ul li {
   margin: 4px auto;
+  list-style-type: none !important;
 }
 .descripcion-hamburguesa ul li p {
   font-size: 15px;
@@ -218,9 +225,9 @@
   /*modal*/
 
   .modal-body {
-    width: 55%;
+   
     height: 48%;
-    background-color: #e2f9ff;
+    background-color: transparent;
     position: relative;
     display: flex;
     justify-content: center;
@@ -245,6 +252,9 @@
   .descripcion-hamburguesa {
     grid-column: 2/3;
     grid-row: 1/3;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 15px;
+      
   }
   .letras-modal {
     max-width: 100%;
@@ -256,11 +266,12 @@
     font-size: 18px;
   }
   .bandera {
-    width: 120px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     margin: 10px auto;
+    border-radius: 30px;
   }
   .nacionalidad {
     font-size: 20px;
@@ -268,11 +279,13 @@
     text-align: center;
   }
   .descripcion-hamburguesa ul li {
+    list-style-type: none !important; 
     margin: 4px auto;
   }
 
   .descripcion-hamburguesa ul {
     width: 100%;
+   
     margin: auto;
   }
   .descripcion-hamburguesa a {
@@ -311,13 +324,23 @@
   .modal-body {
     width: 55%;
     height: 400px;
-    background-color: #e2f9ff;
+    background-color: transparent;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  .bandera {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+.descripcion-hamburguesa ul li {
+  list-style-type: none !important; 
+}
 }
 
 @media (min-width: 1400px) {
@@ -372,7 +395,7 @@
   .modal-body {
     width: 55%;
     height: 35%;
-    background-color: #e2f9ff;
+    background-color: transparent;
     position: relative;
     display: flex;
     justify-content: center;
@@ -408,8 +431,8 @@
     font-size: 18px;
   }
   .bandera {
-    width: 120px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     margin: 10px auto;

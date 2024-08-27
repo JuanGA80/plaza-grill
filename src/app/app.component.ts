@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StringifyOptions } from 'node:querystring';
 
 interface Imagenes {
   id: number;
@@ -94,7 +95,6 @@ export class AppComponent {
       title: 'Smash Burguer',
       imgTitle: 'assets/h-2.png',
       foto: 'assets/h-2.png',
-     
       ingredientes: [
         '200 gramos de carne ',
         'Queso manchego ',
@@ -146,6 +146,7 @@ export class AppComponent {
       title: 'Jack Daniel´s BBQ',
       imgTitle: 'assets/h-6.png',
       foto: 'assets/h-6.png',
+    
       ingredientes: [
         '200 gramos de carne',
         'Mermelada de tocino',
