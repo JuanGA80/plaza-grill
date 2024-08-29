@@ -10,6 +10,7 @@ interface Hamburguesas {
   title: string;
   imgTitle: string;
   foto: string;
+  tabla: string;
   ingredientes: string[];
 }
 interface Cervezas {
@@ -82,6 +83,7 @@ export class AppComponent {
       title: 'Pizza Burguer',
       imgTitle: 'assets/h-1.png',
       foto: 'assets/h-1.png',
+      tabla:  'assets/tabla.webp',
       ingredientes: [
         '225 gramos de carne',
         'Pepperoni',
@@ -95,6 +97,7 @@ export class AppComponent {
       title: 'Smash Burguer',
       imgTitle: 'assets/h-2.png',
       foto: 'assets/h-2.png',
+      tabla:  'assets/tabla.webp',
       ingredientes: [
         '200 gramos de carne ',
         'Queso manchego ',
@@ -109,6 +112,8 @@ export class AppComponent {
       title: 'Chicken Especial',
       imgTitle: 'assets/h-3.png',
       foto: 'assets/h-3.png',
+      tabla:  'assets/tabla.webp',
+
       ingredientes: [
         '250 gramos de tiritas de pechuga de pollo empanizadas ',
         'Quso cheddar',
@@ -121,6 +126,8 @@ export class AppComponent {
       title: 'Chilli Cheese Burguer',
       imgTitle: 'assets/h-4.png',
       foto: 'assets/h-4.png',
+      tabla:  'assets/tabla.webp',
+
       ingredientes: [
         '300 gramos de carne',
         'Todo el estilo Texano del Chilli beans',
@@ -132,6 +139,8 @@ export class AppComponent {
       title: 'H.D.T.P.M.',
       imgTitle: 'assets/h-5.png',
       foto: 'assets/h-5.png',
+      tabla:  'assets/tabla.webp',
+
       ingredientes: [
         '400 gramos de carne, 2 palitos de queso mozarrella',
         'Tocino',
@@ -146,6 +155,8 @@ export class AppComponent {
       title: 'Jack Daniel´s BBQ',
       imgTitle: 'assets/h-6.png',
       foto: 'assets/h-6.png',
+      tabla:  'assets/tabla.webp',
+
     
       ingredientes: [
         '200 gramos de carne',

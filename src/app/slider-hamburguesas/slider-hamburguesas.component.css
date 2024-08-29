@@ -65,19 +65,38 @@
   align-items: center;
 }
 .modal-body {
-  width: 90%;
-  height: 82%;
+  width: 303px;
+  height: auto;
+  
   border-radius: 45px;
-  background-color: #F7D04E;;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden; /* Asegúrate de que el contenido no se desborde del contenedor */
+  background-color: transparent; /* Hacer el fondo transparente para que se vea la imagen de fondo */
+}
+.tabla {
+  position: absolute; /* Para posicionarlo detrás de otros elementos */
+  filter: blur(2px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Asegúrate de que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen en el div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1; /* Asegúrate de que esté detrás de otros elementos en el modal */
+}
+.card-producto{
+  background: rgba(128, 128, 128, 0.2); 
+ 
 }
 .descripcion-hamburguesa h6 {
   text-align: center;
   font-weight: bold;
+  color: white;
   font-size: 25px;
   margin: 0px auto 7px auto;
 }
@@ -92,8 +111,9 @@
   color: white;
 }
 .descripcion-hamburguesa h3 {
-  color: #7f0222;
+  color: #ffffff;
   text-align: center;
+  font-weight: bold;
 }
 .name-hamburguesa {
   margin: auto;
@@ -109,8 +129,8 @@
 }
 
 .descripcion-hamburguesa ul li {
-  list-style: circle;
-  color: #7f0222;
+  list-style: disc;
+  color: #ffffff;
 }
 .descripcion-hamburguesa ul li p {
   color: black;
@@ -188,20 +208,21 @@
   /*modal*/
 
   .modal-body {
-    width: 50%;
-    height: 55%;
+    height: auto;
+    width: 400px;
     border-radius: 45px;
-    background-color: #F7D04E;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
   }
   .card-producto {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); */
+    background: rgba(128, 128, 128, 0.2); 
     gap: 0px;
   }
 
@@ -284,20 +305,27 @@
   /*modal*/
 
   .modal-body {
-    width: 40%;
-    height: 570px;
-    border-radius: 45px;
-    background-color: #F7D04E;
+   width: 30%; 
+    background-color: transparent;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  .tabla {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+    filter: blur(2px);
+}
   .card-producto {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: rgba(128, 128, 128, 0.2); 
   }
   .card-image {
     grid-column: auto;
@@ -345,10 +373,9 @@
     height: 800px;
   }
   .modal-body {
-    width: 40%;
-    height: 43%;
+   
     border-radius: 45px;
-    background-color: #F7D04E;
+  
     position: relative;
     display: flex;
     justify-content: center;

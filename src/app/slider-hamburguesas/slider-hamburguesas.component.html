@@ -36,7 +36,9 @@
         [@animation]="{ value: 'visible' }"
         (@animation.done)="onAnimationFinal($event)"
       >
+          <div  class="tabla" [ngStyle]="{ 'background-image': 'url(' + currentModalHamburguesa.tabla + ')' }"></div>
         <div class="card-producto">
+         
           <div class="descripcion-hamburguesa">
             <h3>{{ currentModalHamburguesa.title }}</h3>
             <img
