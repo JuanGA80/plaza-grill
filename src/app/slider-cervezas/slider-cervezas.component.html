@@ -36,6 +36,7 @@
           (click)="cerrarModalCerveza()"
         ></i>
         <div class="modal-body">
+          <div  class="bandera" [ngStyle]="{ 'background-image': 'url(' + currentModalCerveza.bandera + ')' }"></div>
           <div class="card-producto">
             <div class="card-image">
               <img
@@ -49,14 +50,14 @@
               <h6 class="title-cerveza-modal">
                 {{ currentModalCerveza.title }}
               </h6>
-              <p class="nacionalidad">
+              <!-- <p class="nacionalidad">
                 País: {{ currentModalCerveza.nacionalidad }}
               </p>
               <img
                 src="{{ currentModalCerveza.bandera }}"
                 alt=""
                 class="bandera"
-              />
+              /> -->
 
               <ul>
                 <li>
