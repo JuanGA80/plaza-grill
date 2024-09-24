@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 73vh;
-  margin-top: -70px;
+  height: auto;
+
 }
 .super-container3 {
   height: 100%;
@@ -155,8 +155,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 75vh;
-    margin-top: -70px;
+    height: auto;
   }
   .super-container3 {
     height: 100%;
@@ -169,7 +168,7 @@
     padding-top: 40px;
   }
   .container-slider3 {
-    margin-top: -60px;
+    margin-top: -10px;
   }
   .item-slider3 {
     display: flex;
@@ -272,18 +271,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 680px;
+    height: auto;
+
   }
   .modal-body {
     width: 40%;
     height: 650px;
     background-color: #F7D04E;
-    
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
   }
 }
 @media (min-width: 1400px) {
@@ -293,6 +293,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 49vh;
+
+    height: auto;
+
   }
 }

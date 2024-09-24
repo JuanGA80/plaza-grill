@@ -1,94 +1,99 @@
-/* Estilos generales */
-.opiniones {
-  padding: 6rem;
-  background-color: #000000;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  margin-top: -78px;
-}
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  text-align: center;
-}
-
-/* Estilos del contenedor de opiniones */
-.container-opiniones {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-   /* Centra verticalmente si es necesario */
+.swiper-container {
   width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
-/* Estilos del swiper-container */
-.mySwiper {
-  width: 70%; /* Ancho del 70% del contenedor principal */
-  max-width: 1200px; /* Ancho máximo para evitar que sea demasiado grande */
-  height: auto;
+.opiniones {
+  background-color: white;
+  height: 500px;
 }
 
-/* Estilos de cada slide */
-.item-slider {
+.opiniones .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
+  max-width: 100%;
+  height: 80%;  
 }
 
-/* Estilos de la tarjeta de opinión */
-.card-opinion {
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.container-opiniones {
+  width: 100%;
+  margin: 0px auto;
   text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
+}
+
+.card-stars {
+  text-align: center;
+}
+
+.card-opinion p {
+  text-align: justify;
+
 }
 
 .card-opinion img {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+
+  object-fit: cover;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
 }
 
-.card-stars {
-  margin-bottom: 1rem;
+.opiniones h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
 }
 
-.card-stars i {
-  color: #f39c12;
-  font-size: 1.2rem;
+.item-slider p {
+  padding: 5px 50px;
 }
 
-h6 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
+@media (min-width: 767px) {
+  .container-opiniones {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-p {
-  font-size: 1rem;
-  color: #ffffff;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Estilos del espacio entre slides */
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0 15px;
-}
-
-@media (max-width: 768px) {
   .opiniones {
-    padding: 0;
-    padding-bottom: 135px;
-    padding-top: 6px;
-    margin-top: -1px;
-}}
+    margin-top: 30px;
+    background-color: white;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+
+  .opiniones .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 80%;  
+  }  
+  
+}
+
