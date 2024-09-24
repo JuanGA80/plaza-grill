@@ -194,4 +194,16 @@ nav .logo-menu img {
   #menu_on span:nth-child(3) {
     bottom: 0;
   }
+
+  .li-menu{
+    background-color: #7f0222;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .li-menu:hover{
+    background-color: #d32752;
+    font-size: 1.3rem;
+  }
+
 }

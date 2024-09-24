@@ -6,7 +6,7 @@
 
 .opiniones {
   background-color: white;
-  height: 500px;
+  height: auto;
 }
 
 .opiniones .swiper-slide {
@@ -61,6 +61,19 @@
   padding: 5px 50px;
 }
 
+.btn-reviews{
+  margin-top: 1.5rem;
+  border: 2px solid #7f0222;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.btn-reviews a{ 
+  text-decoration: none;
+  color: #7f0222;
+}
+
 @media (min-width: 767px) {
   .container-opiniones {
     width: 70%;
@@ -71,7 +84,7 @@
   .opiniones {
     margin-top: 30px;
     background-color: white;
-    height: 500px;
+    height: auto;
   }
 
   .swiper-slide img {
@@ -92,4 +105,16 @@
     height: 80%;  
   }  
   
+  .btn-reviews{
+    margin-top: 1.5rem;
+    border: 2px solid #7f0222;
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  .btn-reviews a{ 
+    text-decoration: none;
+    color: #7f0222;
+  }
+
 }
