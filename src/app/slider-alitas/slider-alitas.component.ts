@@ -21,6 +21,9 @@ export class SliderAlitasComponent implements OnInit {
   ngOnInit(): void {}
 
   openModalAlita(index: number) {
+    if(index == 2 ){
+      return
+    }
     this.modalAlita = true;
     this.indexAlita = index;
     this.currentModalAlita = this.Alita[index];

@@ -16,11 +16,16 @@
     >
       <swiper-slide
         class="item-slider3"
-        *ngFor="let date of Alita; let i = index"
+        *ngFor="let date of Alita; let i = index; let last = last"
       >
         <img src="{{ date.imagenAlita }}" alt="" class="img-slider-alita" />
-
-        <button (click)="openModalAlita(i)">Saber más</button>
+        
+        <button 
+          (click)="openModalAlita(i)"
+          *ngIf="!last"
+        >
+          Saber más
+        </button>
       </swiper-slide>
     </swiper-container>
     <div
