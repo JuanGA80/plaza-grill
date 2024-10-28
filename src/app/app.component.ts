@@ -81,8 +81,8 @@ export class AppComponent {
     {
       id: 0,
       title: 'Pizza Burguer',
-      imgTitle: 'assets/h-1.png',
-      foto: 'assets/h-1.png',
+      imgTitle: 'assets/images/hamburguers/pizza-burguer.webp',
+      foto: 'assets/images/hamburguers/pizza-burguer.webp',
       tabla:  'assets/tabla.webp',
       ingredientes: [
         '225 gramos de carne',
@@ -94,24 +94,9 @@ export class AppComponent {
     },
     {
       id: 1,
-      title: 'Smash Burguer',
-      imgTitle: 'assets/h-2.png',
-      foto: 'assets/h-2.png',
-      tabla:  'assets/tabla.webp',
-      ingredientes: [
-        '200 gramos de carne ',
-        'Queso manchego ',
-        'Mermelada de tocino',
-        'Cebolla caramelizada',
-        'Todo envuelto en una masa de nuestros bollos y horneada al momento',
-        'Tiempo aproximado de cocción de 25 minutos',
-      ],
-    },
-    {
-      id: 2,
       title: 'Chicken Especial',
-      imgTitle: 'assets/h-3.png',
-      foto: 'assets/h-3.png',
+      imgTitle: 'assets/images/hamburguers/h-3.png',
+      foto: 'assets/images/hamburguers/h-3.png',
       tabla:  'assets/tabla.webp',
 
       ingredientes: [
@@ -122,10 +107,10 @@ export class AppComponent {
       ],
     },
     {
-      id: 3,
+      id: 2,
       title: 'Chilli Cheese Burguer',
-      imgTitle: 'assets/h-4.png',
-      foto: 'assets/h-4.png',
+      imgTitle: 'assets/images/hamburguers/chili-cheese-burguer.webp',
+      foto: 'assets/images/hamburguers/chili-cheese-burguer.webp',
       tabla:  'assets/tabla.webp',
 
       ingredientes: [
@@ -135,10 +120,10 @@ export class AppComponent {
       ],
     },
     {
-      id: 4,
+      id: 3,
       title: 'H.D.T.P.M.',
-      imgTitle: 'assets/h-5.png',
-      foto: 'assets/h-5.png',
+      imgTitle: 'assets/images/hamburguers/hdptm.webp',
+      foto: 'assets/images/hamburguers/hdptm.webp',
       tabla:  'assets/tabla.webp',
 
       ingredientes: [
@@ -151,13 +136,11 @@ export class AppComponent {
       ],
     },
     {
-      id: 5,
+      id: 4,
       title: 'Jack Daniel´s BBQ',
-      imgTitle: 'assets/h-6.png',
-      foto: 'assets/h-6.png',
+      imgTitle: 'assets/images/hamburguers/jack-daniels.webp',
+      foto: 'assets/images/hamburguers/jack-daniels.webp',
       tabla:  'assets/tabla.webp',
-
-    
       ingredientes: [
         '200 gramos de carne',
         'Mermelada de tocino',
@@ -165,6 +148,21 @@ export class AppComponent {
         'Queso Manchego',
         'Cebolla caramelizada',
         'Sazonada con un rico BBQ preparado con Whiskey Jack Daniel´s',
+      ],
+    },
+    {
+      id: 5,
+      title: 'Smash Burguer',
+      imgTitle: 'assets/images/hamburguers/smash-burguer.webp',
+      foto: 'assets/images/hamburguers/smash-burguer.webp',
+      tabla:  'assets/tabla.webp',
+      ingredientes: [
+        '200 gramos de carne ',
+        'Queso manchego ',
+        'Mermelada de tocino',
+        'Cebolla caramelizada',
+        'Todo envuelto en una masa de nuestros bollos y horneada al momento',
+        'Tiempo aproximado de cocción de 25 minutos',
       ],
     },
   ];
